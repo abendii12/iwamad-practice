@@ -21,7 +21,7 @@ function App() {
           bio="I'm a IT management student passionate about web development and cloud computing. I enjoy building small projects that solve real problems and learning new frameworks along the way."
           email="aben.dilnazz06@gmail.com"
           githubUrl="https://github.com/abendii12"
-          avatarUrl="/photo.jpeg"
+          avatarUrl={`${import.meta.env.BASE_URL}photo.jpeg`}
           skills={skills}
         />
       </main>
