@@ -5,7 +5,7 @@ import SkillsPage from "./pages/SkillsPage";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import "./style.css";
-
+import "./styles/ui.css";
 function App() {
   return (
     <Routes>

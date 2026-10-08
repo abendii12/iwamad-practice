@@ -1,5 +1,5 @@
 import LikeButton from "./LikeButton";
-import { useLikes } from "../context/LikesContext";
+import Card from "./ui/Card";
 
 type ProfileCardProps = {
   name: string;
@@ -10,10 +10,8 @@ type ProfileCardProps = {
 };
 
 function ProfileCard({ name, bio, email, githubUrl, avatarUrl }: ProfileCardProps) {
-  const { likes } = useLikes();
-
   return (
-    <div className={likes > 0 ? "card liked" : "card"}>
+    <Card>
       {avatarUrl && <img className="avatar" src={avatarUrl} alt="Profile avatar" />}
       <div className="card-text">
         <h2 className="name">{name}</h2>
@@ -26,7 +24,7 @@ function ProfileCard({ name, bio, email, githubUrl, avatarUrl }: ProfileCardProp
         </div>
         <LikeButton />
       </div>
-    </div>
+    </Card>
   );
 }
 
