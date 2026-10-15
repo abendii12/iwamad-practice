@@ -1,0 +1,96 @@
+/* Button: from Figma, padding 16 vertical, 8 horizontal */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: 44px;
+  padding: var(--space-4) var(--space-2);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  font: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.btn--secondary {
+  background: var(--color-surface);
+  color: var(--color-primary);
+}
+
+/* Card: values from PostCard in Figma */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--space-2) * 1.5); /* 12px: PostCard gap, no token for 12 */
+  padding: var(--space-4);
+  max-width: 500px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+/* Tag */
+.tag {
+  display: inline-block;
+  padding: var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 0.875rem;
+  line-height: 1;
+}
+
+/* Keyboard focus */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Forms */
+.form {
+  display: grid;
+  gap: var(--space-4);
+  max-width: 360px;
+}
+
+.field {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.field input:not([type='checkbox']) {
+  box-sizing: border-box;
+  width: 100%;
+  font: inherit;
+  min-height: 44px;
+  padding: var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.field input[aria-invalid='true'] {
+  border: 2px solid var(--color-error);
+}
+
+.field-error {
+  margin: 0;
+  color: var(--color-error);
+  font-size: 0.875rem;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 44px;
+}
