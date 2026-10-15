@@ -19,6 +19,7 @@ function Header({ title }: HeaderProps) {
         <NavLink to="/" end>Home</NavLink>
         <NavLink to="/skills">Skills</NavLink>
         <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/register">Register</NavLink>
         <span className="likes-count">♥ {likes}</span>
       </nav>
     </header>
